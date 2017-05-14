@@ -1,0 +1,1 @@
+{"\"IamInstanceProfile\"":{"\"Arn\"":"\"arn:aws:iam::818369878656:instance-profile/administrator\""},"\"ImageId\"":"\"ami-4d3c1a7d\"","\"InstanceType\"":"\"t2.micro\"","\"KeyName\"":"\"AWSKeyPair\"","\"Placement\"":{"\"AvailabilityZone\"":"\"us-west-2a\""},"\"SecurityGroupIds\"":["\"sg-84de03fc\""]}

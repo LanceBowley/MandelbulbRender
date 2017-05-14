@@ -1,0 +1,22 @@
+[
+    {
+        "InstanceIds": [
+            "i-0c184de99c586c142"
+        ],
+        "LaunchSpecs": {
+            "\"IamInstanceProfile\"": {
+                "\"Arn\"": "\"arn:aws:iam::818369878656:instance-profile/administrator\""
+            },
+            "\"ImageId\"": "\"ami-551c8535\"",
+            "\"InstanceType\"": "\"p2.xlarge\"",
+            "\"KeyName\"": "\"AWSKeyPair\"",
+            "\"Placement\"": {
+                "\"AvailabilityZone\"": "\"us-west-2b\""
+            },
+            "\"SecurityGroupIds\"": [
+                "\"sg-84de03fc\""
+            ]
+        },
+        "Name": "cl1"
+    }
+]

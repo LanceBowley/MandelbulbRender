@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Animations/SymmetryVector.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Plotter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Filters/CompoundFilter.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Filters/Filter3f.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Filters/PiecewiseFilter.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Filters/Filter1f.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Filters/MixedFilter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Filters/Filter1f.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Filters/Filter2f.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Filters/Filter2f.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Filters/MixedFilter.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Filters/CompoundFilter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Filters/Filter3f.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Filters/PiecewiseFilter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Camera.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Light.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Color.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Catmul.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/FractParam.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/SymmetryVector.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Animation.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/IFS.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Catmul.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Animation.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Camera.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/FractParam.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Color.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Plotter.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/IFS.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Light.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Paths/PathFactory.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Paths/CompoundPath.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Paths/BasicPath.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Paths/MixedPath.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Paths/CompoundPath.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Paths/PathAnalyzer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Paths/MixedPath.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Paths/PathAnalyzer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Paths/Path.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Paths/SplinePath.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Paths/SplinePath.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Paths/Path.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Paths/PathFactory.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Animations/Paths/BasicPath.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Cluster.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Util.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ServerAWS.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Util.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Libs/muparser-2.2.5/src/muParserError.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Libs/muparser-2.2.5/src/muParserCallback.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Libs/muparser-2.2.5/src/muParserBase.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Libs/muparser-2.2.5/src/muParserBytecode.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Libs/muparser-2.2.5/src/muParser.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Libs/muparser-2.2.5/src/muParserTokenReader.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Libs/muparser-2.2.5/include/muParser.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Libs/muparser-2.2.5/include/muParserCallback.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Libs/muparser-2.2.5/include/muParserBytecode.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Libs/muparser-2.2.5/include/muParserStack.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Libs/muparser-2.2.5/include/muParserDef.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Libs/muparser-2.2.5/include/muParserFixes.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Libs/muparser-2.2.5/include/muParserToken.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Libs/muparser-2.2.5/include/muParserError.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Libs/muparser-2.2.5/include/muParserBase.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Libs/muparser-2.2.5/include/muParserTokenReader.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RenderJob.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/json.hpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Cluster.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ServerAWS.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RenderJob.cpp" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Header Search Paths">
+        <CLASSES>
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include" />
+          <root url="file:///usr/include" />
+          <root url="file:///usr/local/include" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include" />
+          <root url="file:///usr/include" />
+          <root url="file:///usr/local/include" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>

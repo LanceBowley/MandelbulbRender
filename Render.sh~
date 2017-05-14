@@ -1,0 +1,19 @@
+THISDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+$THISDIR/Render
+
+cd $THISDIR
+
+while true
+do
+	cat $THISDIR/CommandQueue.txt > $THISDIR/Exec.sh
+	> CommandQueue.txt
+	if [ -s Exec.sh ] # File is not empty
+	then
+		$THISDIR/Exec.sh
+		> $THISDIR/Exec.sh # Empty exec file 
+	else
+		sleep 10
+	fi
+done
+

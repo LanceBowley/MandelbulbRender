@@ -1,0 +1,80 @@
+IMPORANT ANIMATED PARAMETERS
+
+VIEW
+camera position                                                   [X]
+camera orientaiton                                                [X]
+FOV                                                               [X]
+perspective projection                                            [X]
+                                                                  
+FRACTAL                                                           
+power                                                             [ ]
+fractal constant factor                                           [ ]
+                                                                  
+IFS                                                               [ ]
+This is not explained thouroughly. Just expirement I suppose      
+                                                                  
+SHADERS 2                                                         
+Color surface offset                                              [X]
+                                                                  
+LIGHTS                                                            
+camera light intensity                                            [X]
+camera light color                                                [X]
+camera light orientation                                          [X]
+                                                                  
+Predefined light position                                         [X]
+predefined light intensity (toggle on/off)                        [X]
+predefined light color                                            [X]
+predefined volumetric light intensity (toggle on/off)             [X]
+
+IMPORANT STATIC PARAMETERS===========================================================================
+
+FILE PATHS-------------------------------------------------------------------------------------------
+PNG/JPG: Image format
+BACKGROUND: Image for the background if SHADERS1->TexturedBackground == true
+ENVIRONMENT MAP: Image used for fake reflection 
+AMBIENT OCCLUSION COLOR MAP: Path for the image used for ambient occulusion effect. This was called
+the 'quick and dirty' of an environment map
+
+ENGINE-----------------------------------------------------------------------------------------------
+Detail level: How much 'depth' the engine looks for
+DE step factor: Larger values gives larger steps but faster rendering. should be 0.5 to 1.0 for most. 
+Too large of steps will cause artifacts
+Smoothness: Controls level of detail too
+Linear DE: typically used for hybrid fractals with shitty quality
+
+SHADERS 1--------------------------------------------------------------------------------------------
+SHADING: Sets the level of shading. More or less higher shading gives better shadow gradients versus 
+just black on white
+SPECULARITY: How reflective a surface is
+AMBIENT: Intensity of simple ambient light. Doesn't do much. Keep at zero
+Ambient occulusion: Intensity of ambient occulusion effect
+AO quality: boils down to the number of rays used to simulate light. 1 ---> 30. 3 is the reccomended 
+value. Much slower than SSAO
+Reflection: I believe this is the intensity of reflection of the environment map.
+AO fast mode: Made for only specific paramters
+Ray
+
+
+SHADERS 2--------------------------------------------------------------------------------------------
+SCREEN SPACE AMBIENT OCCLUSION: Faster than ambient occlusion, lower quality. No color here
+SSAO QUALITY: Essentially adjusts how good the shading is for the fractal. Better quality means 
+smaller shadows are created and looks more 'crisp.' Quality is 'good' at 20 and excellent up to 50
+GLOW COLORS: Colors of the glow. Don't know what causes them
+BACKGROUND COLORS: Have no bearing on the actual color of the fractal, they all blend together into 
+one gradient to get the background color
+
+
+NOTES:
+
+Ambient occlusion is the simulation of lighting that is sourced from AO color map as fake 
+reflections
+
+Opposite camera colors and environment maps gives some really cool effects
+
+
+
+
+
+
+
+

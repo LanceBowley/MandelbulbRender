@@ -1,0 +1,2 @@
+#!/bin/sh
+sudo -u lance ssh -i /home/lance/RemoteDesktop/Render/MyKeyPair.pem ubuntu@ec2-35-160-91-52.us-west-2.compute.amazonaws.com -L 5901/127.0.0.1/5901

@@ -1,0 +1,81 @@
+#!/bin/bash
+# Install and initialize VNC server
+
+# Important variables
+PUBLICDNS='ec2-35-160-91-52.us-west-2.compute.amazonaws.com'
+KEY='/home/lance/RemoteDesktop/Render/AWSKeyPair.pem'
+LOCALSUDO='lance'
+REMOTESUDO='ubuntu' # Should be 'ubuntu' for Ubuntu 14.04 AMIs 
+LOCALDESKDIR='/home/lance/RemoteDesktop'
+REMOTEDESKDIR="/home/ubuntu/RemoteDesktop"
+PULLINTERVAL='600' # In seconds
+
+# These should remain unchanged
+AWSINSTANCE="$REMOTESUDO@$PUBLICDNS"
+
+sudo -u $LOCALSUDO chmod 400 $KEY
+
+# Modify environment variables in setup file
+sudo -u $LOCALSUDO sed -i s@!REMOTESUDO@"'$REMOTESUDO'"@g $LOCALDESKDIR/Setup.sh
+sudo -u $LOCALSUDO sed -i s@!LOCALDESKDIR@"'$LOCALDESKDIR'"@g $LOCALDESKDIR/Setup.sh
+sudo -u $LOCALSUDO sed -i s@!REMOTEDESKDIR@"'$REMOTEDESKDIR'"@g $LOCALDESKDIR/Setup.sh
+
+# Write Connect file
+sudo -u $LOCALSUDO echo "#!/bin/sh
+sudo -u $LOCALSUDO ssh -i $KEY $AWSINSTANCE" > "$LOCALDESKDIR/Connect.sh"
+
+# Write Tunnel file
+sudo -u $LOCALSUDO echo "#!/bin/sh
+sudo -u $LOCALSUDO ssh -i $KEY $AWSINSTANCE -L 5901/127.0.0.1/5901" > "$LOCALDESKDIR/Tunnel.sh" 
+
+# Write Pull Render file
+sudo -u $LOCALSUDO echo "#!/bin/sh
+scp -i $KEY -r $AWSINSTANCE:$REMOTEDESKDIR/OutboundKeys/* $LOCALDESKDIR/InboundKeys
+while true; do
+	sleep $PULLINTERVAL
+	sudo -u $LOCALSUDO ssh -i $KEY $AWSINSTANCE mv $REMOTEDESKDIR/NewImages/* $REMOTEDESKDIR/TempImages
+	scp -i $KEY -r $AWSINSTANCE:$REMOTEDESKDIR/TempImages/* $LOCALDESKDIR/Images
+	sudo -u $LOCALSUDO ssh -i $KEY $AWSINSTANCE mv $REMOTEDESKDIR/TempImages/* $REMOTEDESKDIR/Images
+done"  > "$LOCALDESKDIR/PullRender.sh"
+
+# Pass setup script
+sudo -u $LOCALSUDO scp -i $KEY "$LOCALDESKDIR/Render/Setup.sh" $AWSINSTANCE: # Asks for permission to add ip
+
+# Connect to the instance
+sudo -u $LOCALSUDO ssh -i $KEY $AWSINSTANCE
+
+# Transfer remote desktop files
+sudo -u $LOCALSUDO scp -i $KEY -r "$LOCALDESKDIR/OutboundKeys" $AWSINSTANCE:$REMOTEDESKDIR/InboundKeys
+
+# Revert start file
+sudo -u $LOCALSUDO sed -i "s@REMOTESUDO=.*@REMOTESUDO=!REMOTESUDO@g" "$LOCALDESKDIR/Setup.sh"
+sudo -u $LOCALSUDO sed -i "s@LOCALDESKDIR=.*@LOCALDESKDIR=!LOCALDESKDIR@g" "$LOCALDESKDIR/Setup.sh"
+sudo -u $LOCALSUDO sed -i "s@REMOTEDESKDIR=.*@REMOTEDESKDIR=!REMOTEDESKDIR@g" "$LOCALDESKDIR/Setup.sh"
+
+sudo -u $LOCALSUDO ssh -i $KEY $AWSINSTANCE -L 5901/127.0.0.1/5901
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
